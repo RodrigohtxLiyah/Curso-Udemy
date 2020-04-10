@@ -1,0 +1,15 @@
+[
+  {
+    "nome": "Quatree Gourmet",
+    "preco": 88.9,
+    "precoKG": 6.49,
+    "descricao": "Raças grandes e medias"
+  },
+  {
+    "nome": "Quatree Supreme",
+    "preco": 169.9,
+    "precoKG": 12.99,
+    "descricao": "Raças pequenas",
+    "desconto": 0.1
+  }
+]

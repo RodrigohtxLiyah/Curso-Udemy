@@ -1,0 +1,30 @@
+[
+  {
+    "nome": "Quatree Gourmet",
+    "preco": 88.9,
+    "precoKG": 6.49,
+    "descricao": "Raças grandes e medias"
+  },
+  {
+    "nome": "Quatree Supreme",
+    "preco": 169.9,
+    "precoKG": 12.99,
+    "descricao": "Raças pequenas",
+    "desconto": 0.1
+  },
+  [
+    {
+      "nome": "Proplan Castrados",
+      "preco": 180.9,
+      "precoKG": 14.49,
+      "descricao": "Para gatos castrados"
+    },
+    {
+      "nome": "Proplan filhote",
+      "preco": 170.9,
+      "precoKG": 12.99,
+      "descricao": "Proplan carne e arroz",
+      "desconto": 0.1
+    }
+  ]
+]
