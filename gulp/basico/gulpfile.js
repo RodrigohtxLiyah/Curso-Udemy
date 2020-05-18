@@ -12,7 +12,15 @@ const antes2 = cb => {
 }
 
 function copiar(cb) {
-    console.log('Tarefeda de copiar!')
+    // gulp.src(['pastaA/arquivo1.txt', 'pastaA/arquivo2.txt'])
+
+    gulp.src('pastaA/**/*.txt')
+    // .pipe(imagePelaMetade())
+    // .pipe(imageEmPretoEBranco())
+    // .pipe(transformacaoA())
+    // .pipe(transformacaoB())
+    // .pipe(transformacaoC())
+    .pipe(gulp.dest('pastaB'))
     return cb()
 }
 
@@ -21,8 +29,7 @@ const fim = cb => {
     return cb()
 }
 module.exports.default = series(
-    antes1,
-    antes2,
+    parallel(antes1,antes2),
     copiar,
     fim,
 )
