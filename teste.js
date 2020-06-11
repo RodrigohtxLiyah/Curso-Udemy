@@ -1,4 +1,4 @@
-let nota = 7
+let nota = 5
 
 const resultado = nota => nota >= 7 ? 'aprovado' : 'reprovado'
 
