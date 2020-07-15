@@ -1,7 +1,13 @@
-let nota = 8
+function esperarPor(tempo) {
+    const futuro = Date.now() + tempo
+    while(Date.now() < futuro) {}
+}
 
-const resultado = nota => nota >= 7 ? 'aprovado' : 'reprovado'
+setInterval(() => console.log('Exec #01'), 400)
+setTimeout(() => {
+    esperarPor(3000)
+    console.log('Exec #02')
+}, 300)
 
-const reposta = `${resultado()} ${nota}`
-
-console.log(reposta)
+esperarPor(5000)
+console.log('Fim!')
