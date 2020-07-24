@@ -1,5 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-const elemento = <h1>React 2</h1>
-ReactDOM.render(elemento, document.getElementById('root'))
+import Pai from './componentes/Pai' // Todo nome do componente criado
+                                    // Por mim, devem conter a primeira
+                                    // Letra maiúscula
+import Filho from './componentes/Filho'
+
+ReactDOM.render(
+    <div>
+        <Pai nome="Paulo" sobrenome="Silva">
+            <Filho nome="Pedro" sobrenome="Silva" />
+            <Filho nome="Paulo" sobrenome="Silva" />
+            <Filho nome="Carla" sobrenome="Silva" />
+        </Pai>
+    </div>
+, document.getElementById('root'))
