@@ -1,11 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import App from './App'
 
-
-var divStyle = {
-    color: 'black'
-}
 
 ReactDOM.render(
-    <div style={divStyle}>Hello World</div>
+    <App />
 , document.getElementById('root'))
